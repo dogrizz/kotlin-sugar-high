@@ -5,12 +5,6 @@ import com.deloitte.extension.MoreDragons.uppercase
 import com.deloitte.extension.abs.toExternalCustomerMTQP666IdFormat
 import print
 
-
-
-
-
-
-
 fun main() {
     val innocentString = "CzE SK0nt Kl1kAsh?!?!1111"
     println(innocentString)

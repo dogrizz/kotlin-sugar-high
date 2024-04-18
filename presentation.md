@@ -1,9 +1,10 @@
----
-theme: gaia
-_class: lead
-paginate: false
-
----
+<!-- theme: default -->
+<!-- class: invert -->
+<style>
+  h1 {
+    color: #149414 
+  }
+</style>
 
 # Kotlin Sugar High
 
@@ -45,6 +46,27 @@ Pretending to know Kotlin for 2 years.
 # What is this about
 ## 11 kinds of programmers
 
+ - one way enjoyers
+ - muh freedom!
+
+---
+
+<style scoped>
+    h2 {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: white;
+    }
+</style>
+
+# What is this about
+## 11 kinds of programmers
+
+ - one way enjoyers
+ - muh freedom!
+ - I am sure I can write it in one line
+
+
 ### I will be exaggerating
 
 ---
@@ -70,6 +92,13 @@ Already exists in other languages. Also in Java.
 
 # Extension functions
 
+```
+  fun ExternalClass.missingFunction() {}
+```
+
+## Cool way to not die from external libs poisoning
+
+## Very usefull for writing transformers/converts
 
 ---
 
@@ -102,3 +131,23 @@ Already exists in other languages. Also in Java.
 
 
 ---
+<style scoped>
+  s {
+    font-size: 25%;
+  }
+</style>
+
+# Thank you
+
+# Questions?
+
+~~I hope not~~
+
+## Sources
+[Kotlin docs](https://kotlinlang.org/docs/home.html)
+[6 magic sugars to keep your kotlin codebase happy](https://medium.com/@piotr.slesarew/6-magic-sugars-that-can-make-your-kotlin-codebase-happier-part-1-ceee3c2bc9d3)
+[Kotlin pitfalls and how to avoid them](https://the-cogitator.com/posts/blog/2017/10/02/kotlin-pitfalls-and-how-to-avoid-them.html)
+
+## Slides and code
+https://github.com/dogrizz/kotlin-sugar-high
+
