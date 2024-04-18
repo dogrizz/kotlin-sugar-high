@@ -2,7 +2,7 @@
 <!-- class: invert -->
 <style>
   h1 {
-    color: #149414 
+    color: #26890d; 
   }
 </style>
 
