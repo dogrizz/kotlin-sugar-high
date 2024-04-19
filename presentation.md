@@ -127,6 +127,16 @@ Already exists in other languages. Also in Java.
 
 ---
 
+# Tricky tricky nullability
+
+## Using java classes
+
+## Compiler is not perfect
+
+## Bang bang!
+
+---
+
 # DSL
 
 
