@@ -1,4 +1,4 @@
-package com.deloitte.extension
+package pub.sugar_high.extension
 
 /**
  * And here you thought #define true false is bad.

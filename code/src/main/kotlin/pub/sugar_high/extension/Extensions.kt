@@ -1,8 +1,8 @@
-package com.deloitte.extension
+package pub.sugar_high.extension
 
 import java.util.*
-import com.deloitte.extension.MoreDragons.uppercase
-import com.deloitte.extension.abs.toExternalCustomerMTQP666IdFormat
+import pub.sugar_high.extension.MoreDragons.uppercase
+import pub.sugar_high.extension.abs.toExternalCustomerMTQP666IdFormat
 import print
 
 fun main() {

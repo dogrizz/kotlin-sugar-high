@@ -24,8 +24,6 @@ Pretending to know Kotlin for 2 years.
 
 # What is this about
 
-
-
  - Kotlin
  - Sugar
  - Nightmares

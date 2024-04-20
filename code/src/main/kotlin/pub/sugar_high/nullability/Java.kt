@@ -1,4 +1,4 @@
-package com.deloitte.nullability
+package pub.sugar_high.nullability
 
 fun main() {
     val pandora = Pojo3()

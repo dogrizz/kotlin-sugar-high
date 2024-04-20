@@ -1,4 +1,4 @@
-package com.deloitte.nullability;
+package pub.sugar_high.nullability;
 
 public class Pojo {
     private String field;
