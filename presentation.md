@@ -2,7 +2,11 @@
 <!-- class: invert -->
 <style>
   h1 {
-    color: #26890d; 
+    color: #26890d;
+    position: absolute;
+    top: 60px;
+    left: 75px;
+    right: 75px;
   }
 </style>
 
@@ -64,17 +68,51 @@ Pretending to know Kotlin for 2 years.
  - muh freedom!
  - I am sure I can write it in one line
 
-
 ### I will be exaggerating
 
 ---
 
+# Not about
+
+ - performance
+ - bytecode
+ - coroutines
+
+---
+# Sealed classes
+
+``` kotlin
+
+sealed class Animal(val favoriteFood: String)
+
+class Dog(favoriteFood: String) : Animal(favoriteFood)
+
+class Horse(favoriteFood: String) : Animal(favoriteFood)
+
+```
+---
+# Sealed classes
+
+```kotlin
+sealed class Demon()
+
+class Cat() : Demon()
+
+class Oni() : Demon()
+
+class Rakshasa() : Demon()
+
+```
+---
 # Sealed classes
 
 ### *Nihil novi*
 Already exists in other languages. Also in Java.
 
+### Sub-classes in same package
+
 ### Mocking issues
+Mockking is fine.
 
 ### But still cool!
 
@@ -86,17 +124,19 @@ Already exists in other languages. Also in Java.
 
 ## Unlock the power of sealed classes
 
+## And much more
+
 ---
 
 # Extension functions
 
-```
+``` kotlin
   fun ExternalClass.missingFunction() {}
 ```
 
-## Cool way to not die from external libs poisoning
+## Cool way to not die from lib poisoning
 
-## Very usefull for writing transformers/converts
+## Very usefull for writing transformers/converters
 
 ---
 
@@ -111,7 +151,7 @@ Already exists in other languages. Also in Java.
 ## Fancy shmancy
  - primary 
  - secondary
- - 
+ - inits
 
 ---
 
@@ -122,6 +162,9 @@ Already exists in other languages. Also in Java.
 
 # Scoped functions
 
+
+---
+# Strings
 
 ---
 
@@ -147,7 +190,7 @@ Already exists in other languages. Also in Java.
 
 # Thank you
 
-# Questions?
+## Questions?
 
 ~~I hope not~~
 
