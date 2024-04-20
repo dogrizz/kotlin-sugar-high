@@ -112,7 +112,7 @@ Already exists in other languages. Also in Java.
 ### Sub-classes in same package
 
 ### Mocking issues
-Mockking is fine.
+Mockk-ing is fine.
 
 ### But still cool!
 
@@ -124,8 +124,26 @@ Mockking is fine.
 
 ## Unlock the power of sealed classes
 
-## And much more
+## Also check contents of containers
 
+## But not too much
+Maybe this will get improved as Java 21 has even moar power
+
+---
+# Destructuring
+```kotlin
+  data class Point(val x: Int, val y: Int)
+
+  val (horizontal, _) = Point(1, 2)
+```
+```kotlin
+  for ((key, value) in map) {
+     // do something with the key and the value
+  }
+```
+```kotlin
+  map.mapValues { (key, value) -> "$value!" }
+```
 ---
 
 # Extension functions
@@ -146,6 +164,24 @@ Mockking is fine.
 
 ---
 
+# Aliasing
+
+``` kotlin
+  import com.external.library.ClashingOrStupidName as MyName
+```
+```kotlin
+  typealias Bucket = List<Files>
+```
+```kotlin
+  typealias SingletonList = (Item) -> List<Item>
+
+  class SingletonListImpl :SingletonList {
+      override fun invoke(item: Item): List<Item> { ... }
+  }
+```
+
+---
+
 # Constructors and inits
 
 ## Fancy shmancy
@@ -155,16 +191,91 @@ Mockking is fine.
 
 ---
 
-# Operator overloading
+# Function magic
 
+## Named parameters
+
+## Default parameters
+
+``` kotlin
+  fun method(name: String, surname: String = "Doe") {}
+
+  method(name = "John")
+```
+
+---
+
+# Function magic
+
+## Overload operators
+ `a+` - `a.unaryPlus()`
+ `a + b` - `a.plus(b)`
+ ...
+[List of operators](https://kotlinlang.org/docs/operator-overloading.html)
+
+---
+
+# Function magic
+
+## Infix functions
+ Custom binary operators
+```kotlin
+  fun String.obliterate(toRemove: String) : String {...}
+
+  "Tom & Jerry" obliterate "Jerry"
+  "Tom & Jerry".obliterate("Jerry")
+
+```
+
+---
+
+# Function magic
+
+## Tail recursion
+ Optimized into loops
+ `tailrec`
+
+---
+
+# Function magic
+
+## High order functions
+```kotlin
+  fun List<Bug>.processBugs(fix: (Bug)-> Unit) { 
+    for(bug in this) {
+      fix(bug)
+    }
+  } 
+```
 
 ---
 
 # Scoped functions
 
+## Granting access through `it`
+`let`, `also`, `takeIf`, `takeUnless`
+``` kotlin
+  something?.let { performNullSafeOp(it) }
+  val otherOrNull = something.takeIf { satisfiesLogic(it) }
+```
+
+---
+
+# Scoped functions
+
+## Access through `this`
+`run`, `with`, `apply`
+``` kotlin
+  with(something) {
+    this.function1()
+    function2()
+  }
+```
 
 ---
 # Strings
+
+Cool stuff!
 
 ---
 
@@ -178,8 +289,15 @@ Mockking is fine.
 
 ---
 
-# DSL
+# Lots of other sweets
 
+## DSL
+
+## Generics
+
+## Delegation
+
+## getters setters
 
 ---
 <style scoped>
