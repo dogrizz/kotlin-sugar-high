@@ -7,4 +7,4 @@ fun String.toExternalCustomerMTQP666IdFormat(): CustomerMTQP666Id {
 }
 
 @JvmInline
-value class CustomerMTQP666Id(val id:String)
+value class CustomerMTQP666Id(val id: String)

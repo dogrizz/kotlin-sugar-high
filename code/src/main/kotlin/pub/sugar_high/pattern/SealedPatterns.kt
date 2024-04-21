@@ -7,8 +7,8 @@ import pub.sugar_high.sealed.other.Cat
 
 fun main() {
     val animals = listOf(Horse("apples"), Dog("slippers"), Cat("ki-sikil-lil-la-ke"))
-    for (animal in animals){
-        when(animal){
+    for (animal in animals) {
+        when (animal) {
             is Dog -> println("bark bark")
             is Horse -> println("neigh neigh")
             is Cat -> println("meow meow")
