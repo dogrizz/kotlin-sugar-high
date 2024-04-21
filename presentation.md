@@ -103,6 +103,11 @@ class Oni() : Demon()
 class Rakshasa() : Demon()
 
 ```
+
+---
+
+## Code
+
 ---
 # Sealed classes
 
@@ -126,8 +131,14 @@ Mockk-ing is fine.
 
 ## Also check contents of containers
 
+## Other stuff
+
 ## But not too much
 Maybe this will get improved as Java 21 has even moar power
+
+---
+
+## Code
 
 ---
 # Destructuring
@@ -158,6 +169,11 @@ Maybe this will get improved as Java 21 has even moar power
 
 ---
 
+## Code
+
+
+---
+
 # Top level
 
 ## We don't need no util classes
@@ -175,8 +191,8 @@ Maybe this will get improved as Java 21 has even moar power
 ```kotlin
   typealias SingletonList = (Item) -> List<Item>
 
-  class SingletonListImpl :SingletonList {
-      override fun invoke(item: Item): List<Item> { ... }
+  class SingletonListImpl : SingletonList {
+      override fun invoke(item: Item) : List<Item> { ... }
   }
 ```
 
@@ -186,8 +202,13 @@ Maybe this will get improved as Java 21 has even moar power
 
 ## Fancy shmancy
  - primary 
+ - inits / properties in order of appearance
  - secondary
- - inits
+
+---
+
+## Code
+
 
 ---
 
@@ -226,6 +247,11 @@ Maybe this will get improved as Java 21 has even moar power
   "Tom & Jerry".obliterate("Jerry")
 
 ```
+
+---
+
+## Code
+
 
 ---
 
@@ -279,6 +305,11 @@ Cool stuff!
 
 ---
 
+## Code
+
+
+---
+
 # Tricky tricky nullability
 
 ## Using java classes
@@ -286,6 +317,11 @@ Cool stuff!
 ## Compiler is not perfect
 
 ## Bang bang!
+
+---
+
+## Code
+
 
 ---
 

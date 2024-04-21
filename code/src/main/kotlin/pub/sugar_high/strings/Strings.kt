@@ -8,7 +8,8 @@ fun main() {
     println(
         """
 
-        this is so $obj dumpty
+        this is so $obj
+            dumpty
 
     """
     )
