@@ -1,7 +1,7 @@
 package pub.sugar_high.pattern
 
 fun main() {
-    for (i in 0..<15) {
+    for (i in 0..15) {
         println(
             when {
                 i in 0..<10 -> "$i digit"
