@@ -165,18 +165,17 @@ Maybe this will get improved as Java 21 has even moar power
 
 ## Cool way to not die from lib poisoning
 
-## Very usefull for writing transformers/converters
-
----
-
-## Code
-
+## Very useful for writing transformers/converters
 
 ---
 
 # Top level
 
 ## We don't need no util classes
+
+---
+
+## Code
 
 ---
 
@@ -241,7 +240,7 @@ Maybe this will get improved as Java 21 has even moar power
 ## Infix functions
  Custom binary operators
 ```kotlin
-  fun String.obliterate(toRemove: String) : String {...}
+  infix fun String.obliterate(toRemove: String) : String {...}
 
   "Tom & Jerry" obliterate "Jerry"
   "Tom & Jerry".obliterate("Jerry")
